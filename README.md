@@ -70,4 +70,6 @@ Cloudflare Workers now supports [serving static assets](https://developers.cloud
    }
    ```
 
+When developing locally, you may find yourself wanting some level of hot reloading. The above scripts don't include this. Instead, you can open a separate terminal instance, navigate to the single-page application project, and run `npx vite build --watch` in order to build your single-page application project on every save. You'll then be able to refresh your Workers application in the browser and it will be serving the new version of your application.
+
 Pro tip: You can use `npx wrangler types` to generate types for your Workers binding if your project is configured with TypeScript.
