@@ -1,0 +1,19 @@
+{
+	"name": "react-on-workers-assets",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "cd react-app && npm run build && cd .. && wrangler deploy",
+		"dev": "cd react-app && npm run build && cd .. && wrangler dev",
+		"start": "cd react-app && npm run build && cd .. && wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.5.2",
+		"@cloudflare/workers-types": "^4.20250109.0",
+		"typescript": "^5.5.2",
+		"vitest": "2.1.8",
+		"wrangler": "^3.103.2"
+	}
+}
