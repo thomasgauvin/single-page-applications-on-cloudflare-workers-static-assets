@@ -13,7 +13,7 @@
 	"assets": {
 		"binding": "ASSETS",
 		"directory": "vue-app/dist",
-		"not_found_handling": "single-page-application"
+		"not_found_handling": "single-page-application" // only needed if not using a worker to serve the app https://developers.cloudflare.com/workers/static-assets/routing/#routing-configuration
 	}
 	/**
 	 * Smart Placement
