@@ -14,7 +14,7 @@ Cloudflare Workers now supports [serving static assets](https://developers.cloud
 
 2. Run `cd <PROJECT_NAME> to step into your Workers project directory.
 
-3. Create your single-page application within the Workers project. For instance, run `npm create vite@latest my-vue-app -- --template react`, `npm create vite@latest my-vue-app -- --template vue`, `ng new <project-name>`.
+3. Create your single-page application within the Workers project. For instance, run `npm create vite@latest my-spa-app -- --template react`, `npm create vite@latest my-spa-app -- --template vue`, `ng new <project-name>`.
 
 4. **If you don't want any API routes or access to server-side functionality with Workers**, you can delete the `src/index.ts` file and remove the entrypoint from `wrangler.toml` or `wrangler.json`. This will omit Workers from being run and only your single-page application will be served.
 
@@ -27,7 +27,7 @@ Cloudflare Workers now supports [serving static assets](https://developers.cloud
 
    ```
    //if using wrangler.toml
-   assets = { binding = "ASSETS", directory = "./vue-app/dist", not_found_handling = "single-page-application" }
+   assets = { binding = "ASSETS", directory = "./spa-app/dist", not_found_handling = "single-page-application" }
 
    //if using wrangler.json
    "assets": {
